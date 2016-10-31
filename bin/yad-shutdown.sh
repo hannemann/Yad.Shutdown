@@ -9,7 +9,7 @@ do
 	echo "#This system will be automatically shut down in $sec seconds."
 	let sec--
 	sleep 1
-done | GTK_THEME="Yad-Shutdown" yad --buttons-layout=center --skip-taskbar --undecorated --title="yad-shutdown" --on-top --button="Shutdown" --button="Reboot:3" --button="Suspend:9" --button="Lock:5" --button="Logout:7" --button="Cancel:1" --progress --center --auto-close
+done | GTK_THEME="Yad-Shutdown" yad --buttons-layout=center --skip-taskbar --sticky --undecorated --title="yad-shutdown" --on-top --button="Shutdown" --button="Reboot:3" --button="Suspend:9" --button="Lock:5" --button="Logout:7" --button="Cancel:1" --progress --center --auto-close
 
 ret=$?
 
